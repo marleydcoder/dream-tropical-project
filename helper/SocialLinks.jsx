@@ -20,7 +20,7 @@ export default function SocialLinks() {
           <AiOutlineInstagram size={22} className="text-gray-800" />
         </Link>
         <Link
-          href="https://www.linkedin.com/in/ugochukwu-victor/"
+          href="https://www.linkedin.com/in/ugochukwu-victor-880ab2234/"
           className="border-[1px] border-gray-800 lg:border-0 p-2 hover:bg-white rounded-[50%] SocialTransition SocialShadow"
         >
           <BiLogoLinkedin size={22} className="text-gray-800" />
