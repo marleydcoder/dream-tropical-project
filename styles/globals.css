@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: rgb(252, 213, 213);
+  --text-shadow: rgba(243, 194, 194, 0.712);
+}
+
+.AuthTransition {
+  transition: 0.5s;
+}
+.SocialTransition {
+  transition: 0.2s;
+}
+
+.SocialShadow:hover {
+  box-shadow: 0 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+.LinkText {
+  @apply font-Poppins font-medium text-sm text-gray-500 hover:text-gray-600 AuthTransition px-7 tracking-widest;
+}
+
+.SliderColor {
+  background: rgba(228, 199, 199, 0.493);
+  backdrop-filter: blur(10px);
+  animation: slider 0.2s ease-in-out;
+}
+
+.BigCircle {
+  width: 550px;
+  height: 550px;
+
+  background: var(--bg);
+  border-radius: 50%;
+}
+
+.MobileBigCircle {
+  width: 350px;
+  height: 350px;
+
+  background: var(--bg);
+  border-radius: 50%;
+}
+
+.SmallCircle {
+  width: 50px;
+  height: 50px;
+
+  background: var(--bg);
+  border-radius: 50%;
+}
+
+.FormattedShadow {
+  text-shadow: 1px 1px 1px var(--text-shadow), 1px 2px 1px var(--text-shadow),
+    1px 3px 1px var(--text-shadow), 1px 4px 1px var(--text-shadow),
+    1px 5px 1px var(--text-shadow), 1px 6px 1px var(--text-shadow),
+    1px 7px 1px var(--text-shadow), 1px 8px 1px var(--text-shadow),
+    1px 9px 1px var(--text-shadow), 1px 10px 1px var(--text-shadow),
+    1px 22px 10px var(--text-shadow), 1px 25px 35px var(--text-shadow),
+    1px 30px 60px var(--text-shadow), 1px 60px 100px var(--text-shadow);
+}
+
+.BookEventShaddow {
+  box-shadow: 0 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slider {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
+}
